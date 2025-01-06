@@ -5,6 +5,9 @@
     "my_cdk_demo_app": "bin/my_cdk_demo_app.js"
   },
   "scripts": {
+    "dev:local": "dotenv -e .env -- npm  --prefix ./app run dev",
+    "serve:dist": "dotenv -e .env -- npm  --prefix ./app run serve:dist",
+    "build:local": "dotenv -e .env -- npm  --prefix ./app run build:prod",
     "build": "dotenv -e .env -- tsc",
     "watch": "dotenv -e .env -- tsc -w",
     "test": "jest",
